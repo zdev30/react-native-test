@@ -18,7 +18,7 @@ export default function Index() {
     <SafeAreaView className="flex-1 bg-background p-5">
 
       <FlatList
-        ListHeaderComponent={() => (
+        ListHeaderComponent={
           <>
             <View className="home-header">
               <View className="home-user">
@@ -54,7 +54,7 @@ export default function Index() {
                 keyExtractor={(item) => item.id}
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                ListEmptyComponent={<Text className="home-empty-state">No upcoming renewls yet</Text>}
+                ListEmptyComponent={<Text className="home-empty-state">No upcoming renewals ye</Text>}
 
               />
 
@@ -67,7 +67,7 @@ export default function Index() {
           </>
 
 
-        )}
+        }
 
 
         data={HOME_SUBSCRIPTIONS}
