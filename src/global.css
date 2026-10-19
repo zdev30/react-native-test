@@ -126,7 +126,7 @@
 }
 
 .upcoming-icon {
-    @apply size-14;
+    @apply size-5;
 }
 
 .upcoming-price {
